@@ -1,0 +1,20 @@
+<html>
+    <head></head>
+    <body>
+        <form action="stocker?function=addstock">
+            <input type="radio" name="function" value="addstock">addstock
+            <input type="radio" name="function" value="sell">sell
+            <input type="radio" name="function" value="deleteall">deleteall
+
+            <p>name:<input type="text" name="name" size="10">
+            <p>amount:<input type="number" name="amount" size="10">
+            <p>price:<input type="number" name="price" size="10">
+            <input type="submit" value="calc">
+        </form>
+
+        <p>{{stock}}</p>
+        <p>salse:{{sales}}</p>
+        <a href="secret">Basic認証</a>
+        
+    </body>
+</html>
